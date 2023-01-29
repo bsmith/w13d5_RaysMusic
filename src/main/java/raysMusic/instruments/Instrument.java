@@ -1,4 +1,4 @@
-package instruments;
+package raysMusic.instruments;
 
 public abstract class Instrument {
     private final String material;

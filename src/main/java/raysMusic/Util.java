@@ -1,4 +1,6 @@
-import behaviours.ISell;
+package raysMusic;
+
+import raysMusic.behaviours.ISell;
 
 public class Util {
     public static double calcMarkup(ISell iSell) {

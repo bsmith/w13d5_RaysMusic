@@ -1,5 +1,6 @@
-package commodities;
+package raysMusic.commodities;
 
+import raysMusic.commodities.BulkSKU;
 import org.junit.Before;
 import org.junit.Test;
 

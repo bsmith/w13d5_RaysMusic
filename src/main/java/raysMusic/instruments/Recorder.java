@@ -1,6 +1,6 @@
-package instruments;
+package raysMusic.instruments;
 
-import behaviours.IPlay;
+import raysMusic.behaviours.IPlay;
 
 public class Recorder extends Instrument implements IPlay {
     private final RecorderType type;

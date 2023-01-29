@@ -1,6 +1,6 @@
-package instruments;
+package raysMusic.instruments;
 
-import behaviours.IPlay;
+import raysMusic.behaviours.IPlay;
 
 public class Guitar extends Instrument implements IPlay {
     private final int strings;

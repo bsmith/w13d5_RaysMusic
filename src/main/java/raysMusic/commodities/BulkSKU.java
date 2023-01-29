@@ -1,6 +1,6 @@
-package commodities;
+package raysMusic.commodities;
 
-import behaviours.ISell;
+import raysMusic.behaviours.ISell;
 
 public class BulkSKU implements ISell {
     private final String type;

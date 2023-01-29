@@ -1,4 +1,4 @@
-package instruments;
+package raysMusic.instruments;
 
 public enum Section {
     WOODWINDS,
