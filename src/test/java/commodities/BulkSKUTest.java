@@ -9,7 +9,7 @@ public class BulkSKUTest {
     BulkSKU bulkSKU;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         bulkSKU = new BulkSKU("strings", "Guitar Strings", 10.00, 15.00, 100);
     }
 

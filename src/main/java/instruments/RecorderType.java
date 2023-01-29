@@ -17,7 +17,7 @@ public enum RecorderType {
         C, D, F;
     }
 
-    private Tuning tuning;
+    private final Tuning tuning;
 
     RecorderType(Tuning tuning) {
         this.tuning = tuning;
