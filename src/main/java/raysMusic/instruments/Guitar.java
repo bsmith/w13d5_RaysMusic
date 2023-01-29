@@ -35,13 +35,13 @@ public class Guitar extends Instrument implements IPlay {
     }
 
     @Override
-    String getDescription() {
+    public String getDescription() {
         return String.format("%s in %s %s with %s strings",
                 getTypeAsString(), getColour(), getMaterial(), getStrings());
     }
 
     @Override
-    String getShortName() {
+    public String getShortName() {
         return getTypeAsString();
     }
 

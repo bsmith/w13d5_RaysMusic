@@ -1,9 +1,10 @@
 package raysMusic.commodities;
 
+import raysMusic.behaviours.ICatalogueItem;
 import raysMusic.behaviours.ISell;
 import raysMusic.instruments.Instrument;
 
-public class UniqueSKU implements ISell {
+public class UniqueSKU implements ISell, ICatalogueItem {
     private final Instrument instrument;
     private final double purchasePrice;
     private final double retailPrice;
@@ -18,6 +19,18 @@ public class UniqueSKU implements ISell {
 
     public Instrument getInstrument() {
         return instrument;
+    }
+
+    public String getType() {
+        return "Instrument";
+    }
+
+    public String getShortName() {
+        return instrument.getShortName();
+    }
+
+    public String getDescription() {
+        return instrument.getDescription();
     }
 
     @Override

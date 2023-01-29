@@ -18,6 +18,6 @@ public abstract class Instrument {
     }
 
     abstract public Section getSection();
-    abstract String getDescription();
-    abstract String getShortName();
+    abstract public String getDescription();
+    abstract public String getShortName();
 }

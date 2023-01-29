@@ -31,12 +31,12 @@ public class Recorder extends Instrument implements IPlay {
     }
 
     @Override
-    String getDescription() {
+    public String getDescription() {
         return null;
     }
 
     @Override
-    String getShortName() {
+    public String getShortName() {
         return null;
     }
 }

@@ -14,7 +14,7 @@ public class UniqueSKUTest {
     UniqueSKU uniqueSKU;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         instrument = new Guitar("Balsa", "White", 5, GuitarType.ELECTRIC);
         uniqueSKU = new UniqueSKU(instrument, 100, 250);
     }
@@ -34,5 +34,21 @@ public class UniqueSKUTest {
     public void canCalculateMarkup() {
         double markup = Util.calcMarkup(uniqueSKU);
         assertEquals(2.50, markup, 0.001);
+    }
+
+    /* Test the ICatalogueItem interface */
+    @Test
+    public void hasType() {
+        assertEquals("Instrument", uniqueSKU.getType());
+    }
+
+    @Test
+    public void hasShortName() {
+        assertEquals("Electric guitar", uniqueSKU.getShortName());
+    }
+
+    @Test
+    public void hasDescription() {
+        assertEquals("Electric guitar in White Balsa with 5 strings", uniqueSKU.getDescription());
     }
 }

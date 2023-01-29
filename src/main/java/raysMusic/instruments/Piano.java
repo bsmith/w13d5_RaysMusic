@@ -43,14 +43,14 @@ public class Piano extends Instrument implements IPlay {
     }
 
     @Override
-    String getDescription() {
+    public String getDescription() {
         return String.format("%s-key Piano in %s %s [%sx%sx%s]",
                 this.getKeys(), this.getColour(), this.getMaterial(),
                 this.getWidth(), this.getHeight(), this.getDepth());
     }
 
     @Override
-    String getShortName() {
+    public String getShortName() {
         return String.format("%s-key Piano", this.getKeys());
     }
 }

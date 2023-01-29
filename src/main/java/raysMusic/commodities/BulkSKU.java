@@ -1,8 +1,9 @@
 package raysMusic.commodities;
 
+import raysMusic.behaviours.ICatalogueItem;
 import raysMusic.behaviours.ISell;
 
-public class BulkSKU implements ISell {
+public class BulkSKU implements ISell, ICatalogueItem {
     private final String type;
     private final String description;
     private final double purchasePrice;
@@ -22,6 +23,12 @@ public class BulkSKU implements ISell {
     }
 
     public String getDescription() {
+        return description;
+    }
+
+    public String getShortName() {
+        if (description.length() > 28)
+            return description.substring(0, 25) + "...";
         return description;
     }
 
