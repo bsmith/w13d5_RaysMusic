@@ -51,4 +51,14 @@ public class UniqueSKUTest {
     public void hasDescription() {
         assertEquals("Electric guitar in White Balsa with 5 strings", uniqueSKU.getDescription());
     }
+
+    /* Test the IStock interface */
+    public void hasGetQuantity() {
+        assertEquals(1, uniqueSKU.getQuantity());
+    }
+
+    public void canRecordSale() {
+        uniqueSKU.recordSale();
+        assertEquals(0, uniqueSKU.getQuantity());
+    }
 }

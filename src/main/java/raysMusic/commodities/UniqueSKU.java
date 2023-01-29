@@ -50,4 +50,12 @@ public class UniqueSKU implements ISell, ICatalogueItem {
     public void markSold() {
         sold = true;
     }
+
+    public int getQuantity() {
+        return isSold() ? 0 : 1;
+    }
+
+    public void recordSale() {
+        markSold();
+    }
 }
